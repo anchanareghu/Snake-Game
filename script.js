@@ -75,7 +75,7 @@ function update() {
     context.fillRect(snakeX, snakeY, blockSize, blockSize);
     
     //game over condition
-    if(snakeX < 0 || snakeX > coloumns*blockSize || snakeY > O || snakeY > rows*blockSize){
+    if(snakeX < 0 || snakeX < coloumns*blockSize || snakeY > O || snakeY > rows*blockSize){
         gameOver = true;
         alert("Game Over")
     }    
